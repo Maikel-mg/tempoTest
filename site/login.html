@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Bootstrap Examples</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="../dist/estilos.min.css"/>
+
+        <script type="text/javascript" src="../dist/vendor.min.js"></script>
+        <script type="text/javascript" src="../dist/app.model.min.js"></script>
+
+        <style>
+            body{
+                background-color: #F1F1F1;
+                border-right: 1px solid #BBB;
+                height: 100%;
+                font-size: 14px;
+                padding : 0;
+            }
+
+            .form-login {
+                margin: 100px auto;
+                width: 500px;
+                height: 400px;
+            }
+            .form-login .content{
+                margin: 0px;
+                padding: 30px;
+                border-top: 4px solid #2a6496;
+                background-color: #FFF;
+            }
+        </style>
+
+        <script>
+            var view;
+            var router;
+            $(document).ready(function () {
+                router = new LoginRouter();
+
+            });
+        </script>
+</head>
+    <body>
+        <div class="page"></div>
+    </body>
+</html>

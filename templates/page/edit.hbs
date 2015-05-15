@@ -1,0 +1,78 @@
+<div class="navbar navbar-inverse navbar-static-top" style="background-color: #2a6496; font-weight: 600">
+    <div class="container">
+        <a href="../login.html" class="navbar-brand" style="color: #FFF">IPARTEK</a>
+        <ul class="nav navbar-nav">
+            <li>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" > </button>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span style="margin-left: 5px">Administración</span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="../administracion/administracion.html">
+                            <i class="glyphicon glyphicon-tasks"></i>
+                            Empresas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../administracion/administracionv2.html">
+                            <i class="glyphicon glyphicon-tasks"></i>
+                            Empresas v2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../administracion/indicadores.html">
+                            <i class="glyphicon glyphicon-tasks"></i>
+                            Indicadores
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="form-login">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label for="descripcion">Descripción:</label>
+                            <input type="text" class="form-control input-sm" name="descripcion" id="descripcion" />
+                        </div>
+                        <div class="form-group">
+                            <label for="meta">Meta:</label>
+                            <input type="text" class="form-control input-sm" name="meta" id="meta" />
+                        </div>
+                        <div class="form-group">
+                            <label for="unidad">Unidad:</label>
+                            <input type="text" class="form-control input-sm" name="unidad" id="unidad" />
+                        </div>
+                        <div class="form-group">
+                            <label for="responsable">Responsable:</label>
+                            <select class="form-control input-sm" name="responsable" id="responsable" >
+                                <option value="-1">Selecciona un responsable</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="objectivo">Objectivo:</label>
+                            <textarea class="form-control input-sm" name="objectivo" id="objectivo" rows="10"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button id="doLogin" class="btn btn-lg btn-primary btn-block" type="button">Entrar</button>
+                <button id="doBack" class="btn btn-lg btn-primary btn-block" type="button">Atras</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,286 @@
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-size : 12px;*/
+    background-color: #f9f9f9;
+}
+
+header .navbar {
+    margin-bottom: 0px;
+    min-height: 50px;
+    height: 50px;
+}
+
+.sidebar-background {
+    position: fixed;
+    z-index: -1;
+    width: 180px;
+    background: #fbfbfb;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-right: 1px solid #dddddd;
+}
+
+.sidebar-background .primary-sidebar-background {
+    width: 180px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #dddddd;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.sidebar {
+    width: 179px;
+    float: left;
+    position: absolute;
+    color: #636363;
+}
+
+.sidebar .title{
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #636363;
+    text-shadow: 0 1px 0 #f3f3f3;
+}
+
+.sidebar .nav {
+    margin-bottom: 18px;
+}
+
+.sidebar .nav>li {
+    position: relative;
+    line-height: 18px;
+}
+
+.sidebar .nav>li>a {
+    color: #636363;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.sidebar .nav > li > a i+span {
+    padding-left: 3px;
+}
+
+.sidebar .nav>li.active>a,
+.sidebar .nav>li>a:focus,
+.sidebar .nav>li>a:hover {
+    background: #0888c3;
+    color: white;
+}
+
+.navbar-inverse .navbar-nav,
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-nav > li > span,
+.navbar-inverse .navbar-nav > li > i {
+    color: #FFF;
+}
+
+.content {
+    margin-left: 181px;
+}
+
+.content .header{
+    border-bottom: 1px solid #ddd;
+    padding : 15px;
+
+}
+
+.content .header h1{
+    padding : 0;
+    margin : 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.content .body {
+    padding: 15px;
+}
+
+.content .footer {
+    padding: 15px;
+}
+
+.panel .panel-heading .badge{
+    padding: 2px 6px;
+    vertical-align: super;
+}
+
+.panel .panel-heading .label{
+    padding: 2px 6px;
+    vertical-align: super;
+}
+
+.modalClaro { }
+.modalClaro .modal-content {
+    border-top: 4px solid #F02323;
+    border-top: 4px solid #494949;
+    border-top: 4px solid #000;
+}
+.modalClaro .modal-header {
+    background-color: rgb(249, 249, 249);
+    padding: 5px 16px;
+    border-bottom: 1px solid #C5c5c5;
+}
+.modalClaro .modal-header .close {
+    font-size:  30px;
+    opacity: 0.5;
+}
+.modalClaro .modal-header .close:hover {
+    opacity: 0.8;
+}
+.modalClaro .modal-toolbar {
+    padding: 0px;
+    background-color: rgb(249, 249, 249);
+    border-bottom: 1px solid #C5c5c5;
+    /* background-color: rgb(243, 250, 221); */
+    background-color: rgb(228, 228, 228);
+}
+.modalClaro .modal-toolbar ul{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    border: 0;
+    list-style: none;
+    display: inline-flex;
+    /* font-size: 12px; */
+    /* background-color: rgb(246, 255, 203); */
+    background-color: rgb(228, 228, 228);
+}
+.modalClaro .modal-toolbar ul li{
+    /* max-width: 11px; */
+    padding: 5px 10px;
+    border-right: 1px solid #DDD;
+    border-right: 1px solid #b5b5b5;
+}
+.modalClaro .modal-toolbar ul li a{
+    color: #000;
+    text-decoration: none;
+}
+.modalClaro .modal-toolbar ul li a i{
+    margin-right: 5px;
+}
+
+
+.modalMasClaro { }
+.modalMasClaro .modal-content {
+    border-top: 4px solid #000;
+}
+.modalMasClaro .modal-header {
+    background-color: rgb(249, 249, 249);
+    padding: 5px 16px;
+    border-bottom: 1px solid #C5c5c5;
+}
+.modalMasClaro .modal-header .close {
+    font-size:  30px;
+    opacity: 0.5;
+}
+.modalMasClaro .modal-header .close:hover {
+    opacity: 0.8;
+}
+.modalMasClaro .modal-toolbar {
+    padding: 0px;
+    background-color: rgb(249, 249, 249);
+    border-bottom: 1px solid #C5c5c5;
+}
+.modalMasClaro .modal-toolbar ul{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    border: 0;
+    list-style: none;
+    display: inline-flex;
+}
+.modalMasClaro .modal-toolbar ul li{
+    padding: 5px 10px;
+    border-right: 1px solid #DDD;
+    border-right: 1px solid #b5b5b5;
+}
+.modalMasClaro .modal-toolbar ul li a{
+    color: #000;
+    text-decoration: none;
+}
+.modalMasClaro .modal-toolbar ul li a i{
+    margin-right: 5px;
+}
+
+.modalColor { }
+.modalColor .modal-content {
+    /*border-top: 4px solid #000;*/
+}
+.modalColor .modal-header {
+    background-color: rgb(42, 100, 150);
+    /* border-top: 4px solid #000; */
+    padding: 5px 16px;
+    /* border-radius: 0; */
+    border-bottom: 1px solid #C5c5c5;
+    color: white;
+}
+.modalColor .modal-header .close {
+    color: white;
+    opacity: 0.5;
+    font-size: 30px;
+}
+.modalColor .modal-header .close:hover {
+    color: white;
+    opacity: 0.8;
+}
+.modalColor .modal-toolbar {
+    padding: 0px;
+    background-color: rgb(249, 249, 249);
+    border-bottom: 1px solid #C5c5c5;
+    background-color: rgb(228, 228, 228);
+    border-botom: 1px solid #b5b5b5;
+}
+.modalColor .modal-toolbar ul{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    border: 0;
+    list-style: none;
+    display: inline-flex;
+    background-color: rgb(228, 228, 228);
+}
+.modalColor .modal-toolbar ul li{
+    padding: 5px 10px;
+    border-right: 1px solid #DDD;
+    border-right: 1px solid #b5b5b5;
+}
+.modalColor .modal-toolbar ul li a{
+    color: #000;
+    text-decoration: none;
+}
+.modalColor .modal-toolbar ul li a i{
+    margin-right: 5px;
+}
+
+.tabla {
+    background-color: #FFF;
+    border-top: 3px solid #585858;
+    border-bottom: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    font-size : 12px;
+}
+
+.tabla thead {
+    background: #f5f5f5;
+}
+.tabla tbody tr:hover {
+    background-color: #f2f2f2;
+}
+.tabla tbody tr.selected {
+    background-color: #DDF48A;
+}
+
+
+
+.modal-backdrop.in {
+    background-color: #DDD;
+}
+
