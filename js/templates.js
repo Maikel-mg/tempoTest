@@ -27,9 +27,11 @@ this["JST"]["templates/page/login.hbs"] = Handlebars.template({"compiler":[6,">=
 this["JST"]["templates/perfil/cabecera.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
-  return "<div class=\"panel panel-default\">\r\n    <div class=\"panel-body\">\r\n        <div class=\"container-fluid\">\r\n            <div class=\"row\">\r\n                <div class=\"col-md-2\"><strong>"
+  return "<div class=\"panel panel-default\">\r\n    <div class=\"panel-body\">\r\n        <div class=\"container-fluid\">\r\n            <div class=\"row\">\r\n                <div class=\"col-md-1\">\r\n                    <img class=\"avatar\" src=\"https://i0.wp.com/d3oaxc4q5k2d6q.cloudfront.net/m/9ac04f7b4548/img/default_avatar/256/user_blue.png?ssl=1\" alt=\"maikel_mg\" title=\"maikel_mg\" style=\"height: 96px;width: 96px; background-color: #017ebc;\">\r\n                </div>\r\n                <div class=\"col-md-11\" style=\"font-size: 24px;\">\r\n                    <strong>"
     + alias3(((helper = (helper = helpers.nombre || (depth0 != null ? depth0.nombre : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"nombre","hash":{},"data":data}) : helper)))
-    + "</strong></div>\r\n                <div class=\"col-md-2\"><strong>"
-    + alias3(((helper = (helper = helpers.apellido || (depth0 != null ? depth0.apellido : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"apellido","hash":{},"data":data}) : helper)))
-    + "</strong></div>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"col-md-2\"><strong>Departamento</strong></div>\r\n                <div class=\"col-md-2\">Ventas</div>\r\n                <div class=\"col-md-2\"><strong>Responsable</strong></div>\r\n                <div class=\"col-md-2\">Paco</div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
+    + "</strong> <strong>"
+    + alias3(((helper = (helper = helpers.apellidos || (depth0 != null ? depth0.apellidos : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"apellidos","hash":{},"data":data}) : helper)))
+    + "</strong>\r\n                    <br/>\r\n                    <span style=\"font-size: 13px; color: #888\">Nombre de usuario: "
+    + alias3(((helper = (helper = helpers.login || (depth0 != null ? depth0.login : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"login","hash":{},"data":data}) : helper)))
+    + "</span>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 },"useData":true});

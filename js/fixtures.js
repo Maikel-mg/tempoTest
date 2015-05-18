@@ -36,6 +36,7 @@ var fixtures = {
             'nombre' : 'Paco',
             'apellidos' : 'Bermudez',
             'email' : 'fbermudez@ipartek.com',
+            "login" : 'br00',
             'id_Departamento' : '1'
         },
         {
@@ -43,13 +44,15 @@ var fixtures = {
             'nombre' : 'Natxo',
             'apellidos' : 'Verlarde',
             'email' : 'nvelarde@ipartek.com',
+            "login" : 'vo00',
             'id_Departamento' : '1'
         },
         {
             'id' : '3',
             'nombre' : 'Maikel',
-            'apellidos' : 'Merillas',
+            'apellidos' : 'Merillas Granado',
             'email' : 'jmmerillas@ipartek.com',
+            "login" : 'mg01',
             'id_Departamento' : '2'
         },
         {
@@ -57,13 +60,15 @@ var fixtures = {
             'nombre' : 'Xabi',
             'apellidos' : 'Olazar',
             'email' : 'xolazar@ipartek.com',
+            "login" : 'og00',
             'id_Departamento' : '2'
         },
         {
             'id' : '5',
             'nombre' : 'Jose Luis',
             'apellidos' : 'Garcia',
-            'email' : 'jlgarcia@ipartek.com',
+            'email' : 'jlgacia@ipartek.com',
+            "login" : 'gp00',
             'id_Departamento' : '3'
         },
         {
@@ -71,6 +76,7 @@ var fixtures = {
             'nombre' : 'Olga',
             'apellidos' : 'Matilla',
             'email' : 'omatilla@ipartek.com',
+            "login" : 'mo00',
             'id_Departamento' : '1'
         },
         {

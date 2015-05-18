@@ -110,9 +110,13 @@ var LoginRouter = Backbone.Router.extend({
         this.view.render();
     },
     home : function ( ) {
+        if (this.usuario.get('id')) {
+            this.view = new PerfilCabeceraView({"el": '.page', model : this.usuario});
+            this.view.render();
+        } else {
+            Backbone.trigger('router:go', '');
+        }
 
-        this.view = new HistoricoIndicadorView({"el": '.page'});
-        this.view.render();
     },
     error : function ( ) {
         $(document).find('body').html('<h1>ERROR </h1>');
