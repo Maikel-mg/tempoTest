@@ -1,5 +1,5 @@
 var PerfilCabeceraView = ItemView.extend({
-     initialize : function () {
+    initialize : function () {
         this.template = JST["templates/perfil/cabecera.hbs"];
     }
 });

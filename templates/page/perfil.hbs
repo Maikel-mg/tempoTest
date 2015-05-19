@@ -1,0 +1,108 @@
+<style>
+    .page .navbar {
+        margin-bottom: 0;
+    }
+
+    .page .container-fluid {
+        padding : 0;
+    }
+
+    #cabeceraPerfil .panel {
+        margin-bottom: 0;
+    }
+
+    #navegacionPerfil {}
+    #navegacionPerfil {
+        /*border-top:     1px solid #ddd;*/
+        border-bottom:  1px solid #ddd;
+        margin: 0;
+    }
+
+    #navegacionPerfil .nav-pills a {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-bottom: 2px solid transparent;
+        border-radius: 0;
+    }
+
+    #navegacionPerfil .nav-pills>li a:hover, #navegacionPerfil .nav-pills>li.active>a:hover{
+        background: #e6e6e6;
+    }
+
+    #navegacionPerfil .nav-pills>li.active>a{
+        background-color: inherit;
+        color: #333;
+        font-weight: bold;
+        border-bottom: 2px solid #207CCB;
+        border-radius: 0;
+    }
+
+    #navegacionPerfil .nav{
+        padding-left: 15px;
+        background-color: #f5f5f5;
+    }
+
+    #contenidoPerfil{
+        background-color: #FFF;
+    }
+
+    #contenidoNavegacion, #activityStreamContenedor {
+        padding: 10px;
+    }
+
+    #contenidoNavegacion h4, #activityStreamContenedor h4 {
+        margin-left : 20px;
+        font-weight: bold;
+    }
+
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="cabeceraPerfil" class="col-lg-12 col-md-12"></div>
+        <div id="navegacionPerfil" class="col-lg-12 col-md-12"></div>
+    </div>
+    <div class="row">
+        <div id="contenidoPerfil" class="col-lg-12 col-md-12">
+            <div class="row">
+                <div id="contenidoNavegacion" class="col-lg-8 col-md-8 tab-content">
+                    <div role="tabpanel" class="tab-pane" id="proyectos">
+                        <h4>PROYECTOS</h4>
+                        <br/>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8">
+                                    <ul class="list-inline" style="margin-left: 15px">
+                                        <li>Estado:</li>
+                                        <li><a href="" class="active">Todos</a></li>
+                                        <li><a href="">Abiertos</a></li>
+                                        <li><a href="">Cerrados</a></li>
+                                        <li><a href="">Cancelados</a></li>
+                                        <li><a href="">En Espera</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <span class="glyphicon glyphicon-search"></span>
+                                            </div>
+                                            <input type="text" class="form-control input-sm" id="exampleInputAmount" placeholder="Buscar Proyectos">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tareas">
+                        <h4>TAREAS</h4>
+                    </div>
+                </div>
+                <div id="activityStreamContenedor" class="col-lg-4 col-md-4">
+                    <h4>ACTIVIDAD</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

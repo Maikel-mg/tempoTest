@@ -18,13 +18,17 @@ module.exports = function(grunt) {
             },
             model : {
                 src : [
+                    'js/ajaxMocks.js',
                     'js/fixtures.js',
                     'js/utils.js',
                     'js/templates.js',
                     'js/models/**.js',
                     'js/collections/**.js',
                     'js/views/itemView.js',
-                    'js/views/**.js'
+                    'js/views/*/**.js',
+                    'js/views/**.js',
+                    'js/routers/**.js'
+
                 ],
                 dest : 'dist/app.model.js'
             },
@@ -78,7 +82,8 @@ module.exports = function(grunt) {
                          'js/templates.js',
                          'js/models/**.js',
                          'js/collections/**.js',
-                         'js/views/**.js'],
+                         'js/views/**.js',
+                         'js/routers/**.js'],
                 tasks: [ 'concat:model', 'uglify:dev' ],
                 options: {
                     livereload: true

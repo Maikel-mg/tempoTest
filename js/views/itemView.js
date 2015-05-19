@@ -7,6 +7,8 @@ var ItemView = Backbone.View.extend({
             this.$el.html(this.template({}));
         }
 
+        this.trigger('viewRendered');
+
         return this;
     }
 });

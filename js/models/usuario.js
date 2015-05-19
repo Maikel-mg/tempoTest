@@ -6,8 +6,7 @@ var UsuarioModel = Backbone.Model.extend({
         'apellidos' : '',
         'email' : '',
         'id_Departamento' : ''
-    }
-    ,
+    },
 
     login : function (usuario) {
         var options = {
