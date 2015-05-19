@@ -3,6 +3,8 @@ var LoginRouter = Backbone.Router.extend({
         '' : 'login',
         'home' : 'home',
         'error' : 'error',
+        'proyecto/form' : 'formularioProyecto',
+        'proyecto/form/:id' : 'formularioProyecto',
         'edit' : 'edit'
     },
     initialize : function (){
@@ -29,6 +31,29 @@ var LoginRouter = Backbone.Router.extend({
             Backbone.trigger('router:go', '');
         }
     },
+    formularioProyecto : function(id){
+        console.log(arguments);
+        if (this.usuario.get('id')) {
+            this.navegacionGlobal();
+            if (id) {
+                var _this   = this;
+                this.proyecto = new ProyectosModel({'id': id});
+                this.proyecto.fetch()
+                    .done(
+                        function () {
+                            _this.view = new ProyectoFormularioView({"el": '.page', model : _this.proyecto});
+                            _this.view.render();
+                        }
+                    );
+            }
+            else {
+                this.view = new ProyectoFormularioView({"el": '.page'});
+                this.view.render();
+            }
+        } else {
+            Backbone.trigger('router:go', '');
+        }
+    },
     error : function ( ) {
         this.navegacionGlobal();
         $(document).find('body').html('<h1>ERROR </h1>');
@@ -49,5 +74,4 @@ var LoginRouter = Backbone.Router.extend({
             this.naveagacionGlobal.render();
         }
     }
-
 });

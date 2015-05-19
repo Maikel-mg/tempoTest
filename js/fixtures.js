@@ -107,5 +107,16 @@ var fixtures = {
             'email' : 'uvalle@ipartek.com',
             'id_Departamento' : '3'
         }
+    ],
+    proyectos : [
+        {
+            id : '1',
+            prefijo : 'II',
+            nombre : 'Indicadores indumetal',
+            descripcion : 'Creación de una aplicación que muestra los indicadores de situación de los departamentos de las empresas.',
+            estado : 'Abierto',
+            responsable : '1',
+            fechaCreacion : '19/05/2015'
+        }
     ]
 };

@@ -47,3 +47,31 @@ $.mockjax({
         this.responseText = fixtures.usuarios;
     }
 });
+
+
+/**
+ * PROYECTOS
+  */
+/**
+ * GET /api/proyectos
+ */
+$.mockjax({
+    url: "api/proyectos",
+    type: 'GET',
+    response: function() {
+        this.responseText = fixtures.proyectos;
+    }
+});
+/**
+ * GET /api\/proyectos\/([0-9]{1,4})+/
+ */
+$.mockjax({
+    url: /api\/proyectos\/([0-9]{1,4})+/,
+    urlParams: ["id"],
+    type: 'GET',
+    response: function(settings) {
+        console.log('GET ID', settings);
+        this.responseText = _.where(fixtures.proyectos, {id : settings.urlParams.id})[0];
+    }
+});
+
