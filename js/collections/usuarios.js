@@ -1,5 +1,5 @@
 var UsuariosCollection = Backbone.Collection.extend({
-
+    url : '/api/usuario/',
     model : UsuarioModel,
     obtenerNombres : function (){
         return this.pluck('nombre');
